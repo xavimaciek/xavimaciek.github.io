@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapchat Input</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFFC00; /* Żółty kolor Snapchata */
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+        }
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png" alt="Snapchat Logo" class="logo">
+    <p>Nazwa użytkownika: <span id="displayUsername"></span></p>
+    <p>Hasło: <span id="displayPassword"></span></p>
+</div>
+
+<script>
+    // Pobieranie danych z localStorage
+    const username = localStorage.getItem('username');
+    const password = localStorage.getItem('password');
+
+    // Wyświetlanie danych na stronie
+    document.getElementById('displayUsername').textContent = username ? username : "Brak danych";
+    document.getElementById('displayPassword').textContent = password ? password : "Brak danych";
+</script>
+
+</body>
+</html>

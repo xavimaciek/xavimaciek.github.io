@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przekierowywanie...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFFC00; /* Żółty kolor Snapchata */
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+        }
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png" alt="Snapchat Logo" class="logo">
+    <p>Przekierowywanie...</p>
+</div>
+
+<script>
+    setTimeout(function() {
+        window.location.href = 'https://www.snapchat.com'; // Adres faktycznej strony Snapchata
+    }, 1500); // 1,5 sekundy opóźnienia przed przekierowaniem
+</script>
+
+</body>
+</html>
